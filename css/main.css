@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park:300,400,600,700&display=swap');
+
+*{
+box-sizing: border-box;
+transition: all ease-in-out 250ms
+}
+body{
+	margin: 0;
+	font-family: 'Kulim Park', sans-serif;
+	text-align: center;
+
+	
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	
+}
+
+/*typography ============*/
+h1{
+	font-weight: 900;
+	font-size: 2rem;
+	margin-top: 0;
+	
+}
+
+h3{
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+input{
+	font-size: .8em;
+}
+label {
+	
+	font-size: 1.8em;
+}
+
+p{
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+	
+}
+
+
+.title{
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+
+.title span{
+	font-weight: 300;
+	display:block;
+	font-size: .85em
+}
+
+.title-cta{
+	margin: 0 0 .5em;
+}
+
+.unstyled-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	
+	
+	
+}
+
+@media(min-width: 60rem){
+	.title{
+		font-size: 10rem;
+	
+	}
+}
+
+/*header
+============*/
+
+header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 1em;
+    background-color: black;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    
+}
+
+nav li{
+	display: inline-block;
+	margin: 1em;
+	
+}
+nav a{
+	font-weight:900;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: .5em;
+    color: white;
+    
+
+}
+
+nav a:hover,
+nav a:focus{
+	color: #3B7DE4
+}
+@media(min-width: 60rem){
+	.logo{
+        float: left;
+    	max-width: 10%;
+}
+	
+	nav {
+        float: right
+        
+	}
+    }
+
+    .container{
+        width: 95%;
+        max-width: 70em;
+        margin: 0 auto;
+
+    }
+    
+/*home intro*/
+
+.home-intro{
+	
+	background-image: url("../img/hero_0000s_0006_back.png");
+	background-size: cover;
+	background-position: center;
+	padding: 5em 0;
+    color: #1e2749ff;
+    background-attachment: fixed;
+    z-index: auto;
+
+   
+    @media(min-width: 60rem){
+
+	.home-intro {
+		height: 100vh;
+		padding-top: 34vh;
+    }
+
+    .title{
+        font-size: 10vh;
+        margin-bottom: 1.5em;
+        font-weight: 900;
+        margin-top: 1em;
+    }
+    @media(min-width: 60rem){
+
+        .home-intro {
+            height: 100vh;
+            padding-top: 34vh;
+        }
+    }
+}
+}
+
+	
+	.parent{
+        position: relative;
+        z-index: 1;
+    
+
+    }
+
+    .over-img{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        }
+
+
+
+       /* CSS HEX 
+--gunmetal: #30343fff;
+--ghost-white: #fafaffff;
+--lavender-blue: #e4d9ffff;
+--space-cadet: #273469ff;
+--space-cadet-2: #1e2749ff;
+*/
