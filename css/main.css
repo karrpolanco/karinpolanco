@@ -15,6 +15,7 @@ body{
 	
 }
 
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -23,8 +24,13 @@ img{
 
 /*typography ============*/
 h1{
-	font-weight: 15rem;
-	font-size: 2rem;
+	font-size: 3.052rem;
+	margin-top: 0;
+	
+}
+
+h2{
+	font-size: 2.441rem;
 	margin-top: 0;
 	
 }
@@ -43,11 +49,12 @@ label {
 }
 
 p{
-	margin-top: 0;
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 	text-align:left;
 	padding: 0px 50px;
+	margin-top: 1em ;
+  margin-bottom: 1em ;
 
 }
 
@@ -89,6 +96,7 @@ p:last-of-type {
 	
 	}
 }
+
 
 /*header
 ============*/
@@ -150,7 +158,7 @@ nav a:focus{
 
 .home-intro{
 	
-	background-image: url("../img/header.jpg");
+	background-image: url("../img/header.png");
 	background-size: cover;
 	background-position: center;
 	padding: 10em 0;
@@ -159,28 +167,52 @@ nav a:focus{
 
 }
    
-    @media(min-width: 60rem){
 
-	.home-intro {
-		height: 150vh;
-		padding-top: 25vh;
-    }
-	}
+
+.about after {
+		content: "";
+		display: table;
+		clear: both;
+}
+.me img {
+	
+	max-width: 80%;
+}
 
 	.me {
-		float: left;
-		width: 50%;
-		}
-	.me img {
-		align-content: center;
-		padding: 1vh;
+	float: left;
+	width: 50%;
+	padding: 10px;
 	}
+
+	
 
 	.about-text {
 		float: right;
 		width: 50%;
+		padding:10% 2%;
+		align-content: center;
 
 
 	}
 	
 
+	@media screen and (max-width: 600px){
+
+		.home-intro {
+			background-image: url("../img/headersm.png");
+			padding-top: 25vh;
+			background-size: cover;
+		}
+		
+	
+		.me {
+			width: 100%;
+	
+		}
+	
+		.about-text {
+			width: 100%;
+	
+		}
+		}
