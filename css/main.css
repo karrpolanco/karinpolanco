@@ -242,7 +242,114 @@ nav a:focus{
 		clear: both;
 	  }
 
+	  	/*CTA
+=========*/
+
+.cta{
+	background: #6F9CEB;
+	padding: 6em 0;
+	color: #FFF;
+	
+	
+}
+
+
+/*Footer
+=====*/
+
+footer{
+	
+	background: #273469;
+	text-align: left;
+	padding: 5em 0;
+	
+	
+}
+
+footer p{
+	font-size: 1em;
+	color: #FFF;
+}
+footer {
+	color: #FFF;
+}
+footer a{
+	text-decoration: none;
+	font-size: 1em;
+	color: #FFF
+	
+}
+
+footer a:hover,
+footer a:focus{
+	color: #3B7DE4
+}
+
+.button-dark{
+	color:#FFF;
+	border-color:#FFF;
+}
+
+.button{
+	font-size: 1.5rem;	
+}
+button{
+	font-size: 1.15rem;
+	text-decoration:none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding:.5em 1.5em
+	}
+
+.botton-dark:hover,
+.button-dark:focus{
+	background: #2734698;
+	color:#FFF;
+}
 	 
+/*Column system
+============*/
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+	word-wrap: break-word;
+}
+[class^=col-]:first-child {
+	margin-top: 0;
+	
+
+	
+}
+.col-1{
+	width: 33.33334%;
+	float: left;
+	
+	
+}
+
+@media (min-width:40rem) {
+	
+ [class^=col-] {
+	float:left;
+	padding: 0 .5em;
+}
+[class^=col-]:first-child{
+	padding-left: 0;
+}
+
+[class^=col-]:last-child{
+	padding-right: 0;
+}
+
+.col-3{
+	width: 50%;
+}
+
+.col-1{
+	width: 16.666%;
+}
+}
 
 	@media screen and (max-width: 600px){
 
@@ -272,6 +379,7 @@ nav a:focus{
 		  .bcolumn {
 			width: 100%;
 		  }
+		
 		}
 
 
