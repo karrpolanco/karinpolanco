@@ -36,8 +36,7 @@ h2{
 }
 
 h3{
-	font-weight: 900;
-	font-size: 2rem;
+	font-size: 1.953rem;
 }
 
 input{
@@ -52,9 +51,7 @@ p{
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 	text-align:left;
-	padding: 0px 50px;
-	margin-top: 1em ;
-  margin-bottom: 1em ;
+
 
 }
 
@@ -167,7 +164,9 @@ nav a:focus{
 
 }
    
-
+.about{
+ padding: 100px 0px;
+}
 
 .about after {
 		content: "";
@@ -190,12 +189,60 @@ nav a:focus{
 	.about-text {
 		float: right;
 		width: 50%;
-		padding:10% 2%;
+		padding:10vh 2vw;
 		align-content: center;
 
 
 	}
 	
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 10px;
+	  }
+
+	  .column img{
+		max-width: 100;
+	  }
+	  .bcolumn {
+		float: left;
+		width: 50%;
+		padding: 10px;
+	  }
+	  .bpcolumn {
+		float: right;
+		width: 50%;
+		padding: 10px;
+	  }
+	  .bpcolumn img{
+		max-width: 80;
+	  }
+	 
+	  
+	  .portfolio {
+		 padding: 450px 15% 100px 15%;
+		  width: 100%;
+	  }
+	  
+	  .blog {
+		padding: 200px 15% 100px 15%;
+		 width: 100%;
+	  }
+
+	  
+	  .row:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+
+	  .brow:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+
+	 
 
 	@media screen and (max-width: 600px){
 
@@ -215,4 +262,28 @@ nav a:focus{
 			width: 100%;
 	
 		}
+
+		.column {
+			width: 100%;
+		  }
+		  .bpcolumn {
+			width: 100%;
+		  }
+		  .bcolumn {
+			width: 100%;
+		  }
 		}
+
+
+		@media screen and (max-width: 1200px){
+			.me {
+				width: 100%;
+		
+			}
+		
+			.about-text {
+				width: 100%;
+		
+			}
+		  
+		  }
