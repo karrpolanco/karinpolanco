@@ -15,6 +15,16 @@ body{
 	
 }
 
+.dark-mode {
+	background-color:#0d1b2a;
+	color: #E0E1DD;
+  }
+
+  .dark-mode h3 {
+	  color: #eca400;
+  }
+
+
 
 img{
 	max-width: 100%;
@@ -32,6 +42,7 @@ h1{
 h2{
 	font-size: 2.441rem;
 	margin-top: 0;
+	margin-bottom: 50px;
 	
 }
 
@@ -103,7 +114,6 @@ header{
 	left: 0;
 	right: 0;
 	margin: 1em;
-    background-color: #141b41;
 }
 
 nav ul{
@@ -127,6 +137,18 @@ nav a{
     color: white;
     
 
+}
+
+.portfolio a{
+	text-decoration: none;
+    color:#eca400;
+    
+
+}
+
+.portfolio a:hover,
+.portfolio a:focus{
+	color: #3B7DE4
 }
 
 nav a:hover,
@@ -158,14 +180,37 @@ nav a:focus{
 	background-image: url("../img/header.png");
 	background-size: cover;
 	background-position: center;
-	padding: 10em 0;
+	padding: 1em 0;
     color: #eca400;
     background-attachment: fixed;
 
 }
+
+.digi-intro{
+	
+background-color: #E84855;
+	background-size: cover;
+	background-position: center;
+	padding: 1em 0;
+    color: #eca400;
+    background-attachment: fixed;
+
+}
+
+.project1-intro{
+	
+	background-color: #eca400;
+		background-size: cover;
+		background-position: center;
+		padding: 1em 0;
+		color: #fff;
+		background-attachment: fixed;
+	
+	}
    
 .about{
- padding: 100px 0px;
+ padding: 60px 0px;
+ transition: ease-in;
 }
 
 .about after {
@@ -205,31 +250,34 @@ nav a:focus{
 		max-width: 100;
 	  }
 	  .bcolumn {
-		float: left;
-		width: 50%;
-		padding: 10px;
-	  }
-	  .bpcolumn {
 		float: right;
 		width: 50%;
 		padding: 10px;
 	  }
-	  .bpcolumn img{
-		max-width: 80;
+	  .bpcolumn {
+		float: left;
+		width: 50%;
+		padding: 10px;
 	  }
-	 
+	  .divider {
+		  position: relative;
+	  }
+	  .brow {
+      width: 100%;
+	  padding: 30px 10% 31px 10%;
+	  }
 	  
 	  .portfolio {
-		 padding: 450px 15% 100px 15%;
+		 padding: 50px 7% 10px 7%;
 		  width: 100%;
 	  }
 	  
 	  .blog {
-		padding: 100px 15% 100px 15%;
 		 width: 100%;
+		 padding-top: 50px;
 	  }
 
-	  
+	 
 	  .row:after {
 		content: "";
 		display: table;
@@ -242,6 +290,13 @@ nav a:focus{
 		clear: both;
 	  }
 
+	  .bcolumn a{
+  color: #eca400;
+	  }
+
+	  .bcolumn a:hover, .bcolumn a:focus {
+		color: #3B7DE4;
+	}
 	  	/*CTA
 =========*/
 
@@ -261,7 +316,7 @@ footer{
 	
 	background: #273469;
 	text-align: left;
-	padding: 5em 0;
+    padding: 5em 0 7em 0;
 	
 	
 }
@@ -285,28 +340,34 @@ footer a:focus{
 	color: #3B7DE4
 }
 
-.button-dark{
-	color:#FFF;
-	border-color:#FFF;
-}
+/*-- Buttons */
 
-.button{
-	font-size: 1.5rem;	
-}
-button{
-	font-size: 1.15rem;
-	text-decoration:none;
-	text-transform: uppercase;
-	border-width: 2px;
-	border-style: solid;
-	padding:.5em 1.5em
-	}
+.button {
+	font-family: 'Roboto', sans-serif;
+	background-color: #eca400; 
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
 
-.botton-dark:hover,
-.button-dark:focus{
-	background: #2734698;
-	color:#FFF;
-}
+  .button1 {
+	background-color: #eca400; 
+	color: #fff ;
+	border: 2px solid #eca400;
+  }
+  
+  .button1:hover {
+	background-color: #141b41;
+	color: white;
+  }
+
 	 
 /*Column system
 ============*/
@@ -379,7 +440,12 @@ button{
 		  .bcolumn {
 			width: 100%;
 		  }
+
+		  .title{
+			font-size: 2rem;
+			padding: 197px 0 0 0;
 		
+		}
 		}
 
 
@@ -393,5 +459,21 @@ button{
 				width: 100%;
 		
 			}
+
+			
+			  .bpcolumn {
+				width: 100%;
+			  }
+			  .bcolumn {
+				width: 100%;
+			  
+			
+			}
+			.title{
+				font-size: 5em;
+				padding: 100px 0 0 0;
+			
+			}
+			
 		  
 		  }
