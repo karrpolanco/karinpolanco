@@ -103,6 +103,11 @@ p:last-of-type {
 		font-size: 18rem;
 	
 	}
+
+	.dtitle{
+		font-size: 18rem;
+		padding: 100px 0px 91px 0px;
+	}
 }
 
 
@@ -151,6 +156,17 @@ nav a{
 	color: #3B7DE4
 }
 
+.blog a{
+	text-decoration: none;
+    color:#eca400;
+    
+
+}
+
+.blog a:hover,
+.blog a:focus{
+	color: #3B7DE4
+}
 nav a:hover,
 nav a:focus{
 	color: #3B7DE4
@@ -197,6 +213,7 @@ background-color: #E84855;
 
 }
 
+
 .project1-intro{
 	
 	background-color: #eca400;
@@ -204,6 +221,17 @@ background-color: #E84855;
 		background-position: center;
 		padding: 1em 0;
 		color: #fff;
+		background-attachment: fixed;
+	
+	}
+
+	.extended{
+	
+		background-image: url("../img/rf.jpg");
+		background-size: cover;
+		background-position: center;
+		padding: 10em 0;
+		color: #eca400;
 		background-attachment: fixed;
 	
 	}
@@ -420,6 +448,11 @@ footer a:focus{
 			background-size: cover;
 		}
 		
+		.digi-intro {
+			padding-top: 25vh;
+			background-size: cover;
+			font-size: 1rem;
+		}
 	
 		.me {
 			width: 100%;
@@ -440,12 +473,8 @@ footer a:focus{
 		  .bcolumn {
 			width: 100%;
 		  }
-
-		  .title{
-			font-size: 2rem;
-			padding: 197px 0 0 0;
-		
-		}
+		 
+		 
 		}
 
 
@@ -466,14 +495,14 @@ footer a:focus{
 			  }
 			  .bcolumn {
 				width: 100%;
-			  
 			
 			}
 			.title{
-				font-size: 5em;
-				padding: 100px 0 0 0;
-			
+				padding: 100px;
 			}
-			
-		  
-		  }
+
+			.dtitle{
+				font-size: 5rem;
+     			padding: 200px 0px 90px 0px;
+			}
+		}
