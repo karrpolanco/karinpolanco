@@ -19,11 +19,35 @@ body{
 	background-color:#0d1b2a;
 	color: #E0E1DD;
   }
-
+  
+  .dark-mode p {
+	color: #E0E1DD;
+  }
   .dark-mode h3 {
 	  color: #eca400;
   }
 
+  .dark-mode .home-intro{
+	background-color:#101531ff;
+  }
+
+  .dark-mode .about{
+	background-color:#583e02ff;
+  }
+/* CSS HEX 
+--violet-blue: #384bb7ff;
+--white: #ffffffff;
+--baby-blue-eyes: #a3c0f2ff;
+--maize-crayola: #ffca4fff;
+--salmon-pink: #f18b93ff;
+*/
+/* CSS HEX Dark Mode
+--oxford-blue: #101531ff;
+--onyx: #454545ff;
+--space-cadet: #0f2c5eff;
+--pullman-brown-ups-brown: #583e02ff;
+--rosewood: #5a0d12ff;
+ */
 
 
 img{
@@ -36,6 +60,8 @@ img{
 h1{
 	font-size: 3.052rem;
 	margin-top: 0;
+	margin-bottom:0px ;
+	text-align: left;
 	
 }
 
@@ -43,6 +69,8 @@ h2{
 	font-size: 2.441rem;
 	margin-top: 0;
 	margin-bottom: 50px;
+	text-align: left;
+	color: #fff;
 	
 }
 
@@ -62,6 +90,7 @@ p{
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 	text-align:left;
+	color: #384bb7ff;
 
 
 }
@@ -73,20 +102,8 @@ p:last-of-type {
 
 
 .title{
-	font-size: 10rem;
-	margin-bottom: 1.5em;
 	font-weight: 900;
-	margin-top: .5em;
-}
-
-.title span{
-	font-weight: 300;
-	display:block;
-	font-size: .85em
-}
-
-.title-cta{
-	margin: 0 0 .5em;
+	padding-top: .5em;
 }
 
 .unstyled-list{
@@ -101,6 +118,7 @@ p:last-of-type {
 @media(min-width: 60rem){
 	.title{
 		font-size: 18rem;
+		padding: .8em 0 0 0;
 	
 	}
 
@@ -109,6 +127,7 @@ p:last-of-type {
 		padding: 100px 0px 91px 0px;
 	}
 }
+
 
 
 /*header
@@ -185,21 +204,25 @@ nav a:focus{
 
     .container{
         width: 95%;
-        max-width: 70em;
-        margin: 0 auto;
+		padding-bottom: 8em;
+		padding-left: 100px;
 
     }
     
 
 .home-intro{
 	
-	background-image: url("../img/header.png");
+/*	background-image: url("../img/header.png");*/
+ background-color: #384bb7ff;
 	background-size: cover;
 	background-position: center;
-	padding: 1em 0;
-    color: #eca400;
-    background-attachment: fixed;
+    color: #ffca4fff;
+	background-attachment: fixed;
 
+}
+
+.home-intro h2{
+	color: #f18b93ff;
 }
 
 .digi-intro{
@@ -239,6 +262,7 @@ background-color: #E84855;
 .about{
  padding: 60px 0px;
  transition: ease-in;
+ background-color: #ffca4fff;
 }
 
 .about after {
@@ -246,6 +270,11 @@ background-color: #E84855;
 		display: table;
 		clear: both;
 }
+
+.about h2{
+	color:#FFF;
+}
+
 .me img {
 	
 	max-width: 80%;
@@ -262,16 +291,17 @@ background-color: #E84855;
 	.about-text {
 		float: right;
 		width: 50%;
-		padding:10vh 2vw;
 		align-content: center;
+		padding: 15vh 1vw  10vh 0vw;
+	
+		}
 
-
-	}
+	
 	
 	.column {
 		float: left;
-		width: 33.33%;
-		padding: 10px;
+		width: 50%;
+		padding: 10em 0em;
 	  }
 
 	  .column img{
@@ -296,15 +326,25 @@ background-color: #E84855;
 	  }
 	  
 	  .portfolio {
-		 padding: 50px 7% 10px 7%;
+		 padding: 50px 7% 100px 10%;
 		  width: 100%;
+		  background-color:#a3c0f2ff ;
+	  }
+
+	  .portfolio h1{
+		  font-size: 5em ;
+		  color: #384bb7ff;
 	  }
 	  
 	  .blog {
 		 width: 100%;
-		 padding-top: 50px;
+		 padding: 50px 7% 100px 10%;
+		 background-color: #ffca4fff;
 	  }
-
+	  .blog h1{
+		font-size: 5em ;
+		color: #384bb7ff;
+	}
 	 
 	  .row:after {
 		content: "";
@@ -440,52 +480,36 @@ footer a:focus{
 }
 }
 
-	@media screen and (max-width: 600px){
-
-		.home-intro {
-			background-image: url("../img/headersm.png");
-			padding-top: 25vh;
-			background-size: cover;
-		}
-		
-		.digi-intro {
-			padding-top: 25vh;
-			background-size: cover;
-			font-size: 1rem;
-		}
 	
-		.me {
-			width: 100%;
-	
-		}
-	
-		.about-text {
-			width: 100%;
-	
-		}
-
-		.column {
-			width: 100%;
-		  }
-		  .bpcolumn {
-			width: 100%;
-		  }
-		  .bcolumn {
-			width: 100%;
-		  }
-		 
-		 
-		}
-
 
 		@media screen and (max-width: 1200px){
+			.container{
+				padding-top: 10em;
+				padding-bottom:8em;
+
+
+			}
+			
+			.title{
+				font-size: 10rem;
+				margin:0;
+			}
+			
+			
 			.me {
 				width: 100%;
 		
 			}
+
+			.column {
+				width: 100%;
+				padding: 10vh 1vw  10vh 8vw;
+			}
+		
 		
 			.about-text {
 				width: 100%;
+				padding: 10vh 1vw  10vh 8vw;
 		
 			}
 
@@ -497,12 +521,57 @@ footer a:focus{
 				width: 100%;
 			
 			}
-			.title{
-				padding: 100px;
-			}
+			
+		
 
 			.dtitle{
 				font-size: 5rem;
      			padding: 200px 0px 90px 0px;
 			}
 		}
+
+		@media screen and (max-width: 600px){
+
+			.home-intro {
+				/* background-image: url("../img/headersm.png");*/
+				padding-top: 12vh;
+				background-size: cover;
+			}
+	
+			.title{
+				font-size: 8rem;
+			}
+			.container{
+				padding: 8em 1em 9em 3em;
+						}
+			
+			.digi-intro {
+				padding-top: 25vh;
+				background-size: cover;
+				font-size: 1rem;
+			}
+		
+			.me {
+				width: 100%;
+		
+			}
+		
+			.about-text {
+				width: 100%;
+				padding: 10vh 1vw  10vh 0vw;
+		
+			}
+	
+			.column {
+				width: 100%;
+			  }
+			  .bpcolumn {
+				width: 100%;
+			  }
+			  .bcolumn {
+				width: 100%;
+			  }
+			 
+			 
+			}
+	
