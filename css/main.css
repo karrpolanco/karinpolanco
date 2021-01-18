@@ -14,18 +14,20 @@ body{
 
 	
 }
-
+img{
+	max-width: 100%;
+	height: auto;
+	
+}
+/*dark mode */
 .dark-mode {
-	background-color:#0d1b2a;
 	color: #E0E1DD;
   }
   
   .dark-mode p {
 	color: #E0E1DD;
   }
-  .dark-mode h3 {
-	  color: #eca400;
-  }
+  
 
   .dark-mode .home-intro{
 	background-color:#101531ff;
@@ -34,6 +36,25 @@ body{
   .dark-mode .about{
 	background-color:#583e02ff;
   }
+  .dark-mode .portfolio{
+	background-color:#101531ff;
+  }
+  .dark-mode .portfolio h1{
+	color:#a3c0f2ff;
+  }
+
+  .dark-mode .blogpost{
+	background-color:#583e02ff;
+  }.dark-mode .blog{
+	background-color:#583e02ff;
+  }
+  .dark-mode .blog h1{
+	color:#a3c0f2ff;
+  }
+  .dark-mode .cta{
+	background-color:#101531ff;
+  }
+
 /* CSS HEX 
 --violet-blue: #384bb7ff;
 --white: #ffffffff;
@@ -50,11 +71,7 @@ body{
  */
 
 
-img{
-	max-width: 100%;
-	height: auto;
-	
-}
+
 
 /*typography ============*/
 h1{
@@ -68,7 +85,6 @@ h1{
 h2{
 	font-size: 2.441rem;
 	margin-top: 0;
-	margin-bottom: 50px;
 	text-align: left;
 	color: #fff;
 	
@@ -91,6 +107,7 @@ p{
 	font-family: 'Roboto', sans-serif;
 	text-align:left;
 	color: #384bb7ff;
+	font-size: 18px;
 
 
 }
@@ -100,35 +117,9 @@ p:last-of-type {
 	
 }
 
+/*sections*/
 
-.title{
-	font-weight: 900;
-	padding-top: .5em;
-}
-
-.unstyled-list{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	
-	
-	
-}
-
-@media(min-width: 60rem){
-	.title{
-		font-size: 18rem;
-		padding: .8em 0 0 0;
-	
-	}
-
-	.dtitle{
-		font-size: 18rem;
-		padding: 100px 0px 91px 0px;
-	}
-}
-
-
+/*header*/
 
 /*header
 ============*/
@@ -163,6 +154,30 @@ nav a{
 
 }
 
+
+
+/* home intro*/
+
+.title{
+	font-weight: 900;
+	padding-top: .5em;
+}
+
+
+
+
+
+@media(min-width: 60rem){
+	.title{
+		font-size: 18rem;
+		padding: .8em 0 0 0;
+	
+	}
+}
+
+
+
+
 .portfolio a{
 	text-decoration: none;
     color:#eca400;
@@ -172,19 +187,26 @@ nav a{
 
 .portfolio a:hover,
 .portfolio a:focus{
-	color: #3B7DE4
+	color: #ffca4fff
 }
 
 .blog a{
 	text-decoration: none;
-    color:#eca400;
+    color:#FFF;
     
 
 }
 
 .blog a:hover,
 .blog a:focus{
-	color: #3B7DE4
+	color: #fff
+}
+
+.blogpost a{
+	text-decoration: none;
+    color:#FFF;
+    
+
 }
 nav a:hover,
 nav a:focus{
@@ -292,7 +314,7 @@ background-color: #E84855;
 		float: right;
 		width: 50%;
 		align-content: center;
-		padding: 15vh 1vw  10vh 0vw;
+		padding: 15vh 1vw  0vh 0vw;
 	
 		}
 
@@ -307,26 +329,14 @@ background-color: #E84855;
 	  .column img{
 		max-width: 100;
 	  }
-	  .bcolumn {
-		float: right;
-		width: 50%;
-		padding: 10px;
-	  }
-	  .bpcolumn {
-		float: left;
-		width: 50%;
-		padding: 10px;
-	  }
-	  .divider {
-		  position: relative;
-	  }
+	  
 	  .brow {
       width: 100%;
 	  padding: 30px 10% 31px 10%;
 	  }
 	  
 	  .portfolio {
-		 padding: 50px 7% 100px 10%;
+		 padding: 50px 7% 50px 10%;
 		  width: 100%;
 		  background-color:#a3c0f2ff ;
 	  }
@@ -336,11 +346,18 @@ background-color: #E84855;
 		  color: #384bb7ff;
 	  }
 	  
+	  .blogpost { 
+		  padding:60px 0px 0px 0px;
+	  transition: ease-in;
+	  background-color: #ffca4fff;
+
+	  }
 	  .blog {
 		 width: 100%;
-		 padding: 50px 7% 100px 10%;
+		 padding: 0px 7% 50px 10%;
 		 background-color: #ffca4fff;
 	  }
+
 	  .blog h1{
 		font-size: 5em ;
 		color: #384bb7ff;
@@ -369,8 +386,8 @@ background-color: #E84855;
 =========*/
 
 .cta{
-	background: #6F9CEB;
-	padding: 6em 0;
+	background:#a3c0f2ff;
+	padding: 7em 13em 5em;
 	color: #FFF;
 	
 	
@@ -382,7 +399,7 @@ background-color: #E84855;
 
 footer{
 	
-	background: #273469;
+	background: #384bb7ff;
 	text-align: left;
     padding: 5em 0 7em 0;
 	
@@ -408,34 +425,47 @@ footer a:focus{
 	color: #3B7DE4
 }
 
+.unstyled-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	
+	
+	
+}
+
 /*-- Buttons */
 
 .button {
-	font-family: 'Roboto', sans-serif;
-	background-color: #eca400; 
+	background-color: #f18b93ff;
 	border: none;
 	color: white;
-	padding: 16px 32px;
+	padding: 20px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
-	margin: 4px 2px;
-	transition-duration: 0.4s;
+	margin: 25px 2px;
 	cursor: pointer;
+	align-content: inherit;
+	float: left;
   }
 
-  .button1 {
-	background-color: #eca400; 
-	color: #fff ;
-	border: 2px solid #eca400;
-  }
+  .button {border-radius: 18px;}
+	
   
-  .button1:hover {
-	background-color: #141b41;
+  .button:hover {
+	background-color: #ffca4fff;
 	color: white;
   }
 
+  .blogpost .button:hover {
+	background-color: #a3c0f2ff;
+	color: white;
+  }
+  .blog .button:hover {
+	background-color: #a3c0f2ff;
+	color: white;
+  }
 	 
 /*Column system
 ============*/
@@ -484,7 +514,7 @@ footer a:focus{
 
 		@media screen and (max-width: 1200px){
 			.container{
-				padding-top: 10em;
+				padding-top:5em;
 				padding-bottom:8em;
 
 
@@ -503,13 +533,13 @@ footer a:focus{
 
 			.column {
 				width: 100%;
-				padding: 10vh 1vw  10vh 8vw;
-			}
+				padding: 7vh 0vw 5vh 0vw;
+			  }
 		
 		
 			.about-text {
 				width: 100%;
-				padding: 10vh 1vw  10vh 8vw;
+				padding: 3vh 1vw  1vh 8vw;
 		
 			}
 
@@ -522,6 +552,11 @@ footer a:focus{
 			
 			}
 			
+			.cta{
+				padding: 0em 2em 2em;
+				
+				
+			}
 		
 
 			.dtitle{
@@ -544,26 +579,30 @@ footer a:focus{
 			.container{
 				padding: 8em 1em 9em 3em;
 						}
-			
-			.digi-intro {
-				padding-top: 25vh;
-				background-size: cover;
-				font-size: 1rem;
-			}
+			.about{
+				 padding: 10px 0px;
+ 				transition: ease-in;
+ 				background-color: #ffca4fff;
+}
 		
 			.me {
 				width: 100%;
+				padding:15px 0px 20px 0px;
 		
 			}
 		
 			.about-text {
 				width: 100%;
-				padding: 10vh 1vw  10vh 0vw;
+				padding: 3vh 1vw  3vh 0vw;
 		
 			}
+		.row {
+			padding-bottom: 10px;
+		}
 	
 			.column {
 				width: 100%;
+				padding: 10px 0px;
 			  }
 			  .bpcolumn {
 				width: 100%;
@@ -572,6 +611,29 @@ footer a:focus{
 				width: 100%;
 			  }
 			 
-			 
+			  .portfolio{
+				 padding: 50px 10% 10px 10%;
+
+			 }
+
+			 .portfolio h1 {
+				font-size: 4em;
 			}
+			.blogpost{
+				padding: 0px 0px;
+			}
+
+			.blog{
+				padding:0px 7% 10px 10%
+		
+			}
+
+
+			.cta {
+				padding: 1em 2em;
+				
+				
+			}
+		}
+
 	
