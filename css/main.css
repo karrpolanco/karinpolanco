@@ -175,7 +175,12 @@ nav a{
 	}
 }
 
+.about a{
+	text-decoration: none;
+    color:#FFF;
+    
 
+}
 
 
 .portfolio a{
@@ -196,6 +201,8 @@ nav a{
     
 
 }
+
+
 
 .blog a:hover,
 .blog a:focus{
@@ -458,6 +465,10 @@ footer a:focus{
 	color: white;
   }
 
+  .about .button:hover {
+	background-color: #a3c0f2ff;
+	color: white;
+  }
   .blogpost .button:hover {
 	background-color: #a3c0f2ff;
 	color: white;
