@@ -34,7 +34,7 @@ img{
   }
 
   .dark-mode .about{
-	background-color:#583e02ff;
+	background-color:#5a0d12ff;
   }
   .dark-mode .portfolio{
 	background-color:#101531ff;
@@ -44,15 +44,34 @@ img{
   }
 
   .dark-mode .blogpost{
-	background-color:#583e02ff;
+	background-color:#5a0d12ff;;
   }.dark-mode .blog{
-	background-color:#583e02ff;
+	background-color:#5a0d12ff;;
   }
   .dark-mode .blog h1{
 	color:#a3c0f2ff;
   }
   .dark-mode .cta{
 	background-color:#101531ff;
+  }
+
+ .dark-mode .collapsible {
+	background-color:#101531ff;
+
+  }
+
+  .dark-mode .content {
+	background-color: #101531ff;
+  }
+
+  .dark-mode h4{
+	
+	color: #a3c0f2ff;
+  }
+
+  .dark-mode h5{
+	
+	color: #ffca4fff;
   }
 
 /* CSS HEX 
@@ -92,6 +111,22 @@ h2{
 
 h3{
 	font-size: 1.953rem;
+	text-align: left;
+	color: #384bb7ff;
+}
+
+h4{
+	font-size:1.563rem ;
+	text-align: left;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+h5 { 
+	font-size: 1.25Rem;
+	text-align: left;
+	color: #384bb7ff;
+	font-family: 'Roboto', sans-serif;
 }
 
 input{
@@ -647,4 +682,31 @@ footer a:focus{
 			}
 		}
 
+	/*collapsible*/
+	.collapsible {
+		background-color: #a3c0f2ff;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		outline: none;
+		font-size: 15px;
+
+	  }
+
+	  
+	  .active, .collapsible:hover {
+		background-color: #ffca4fff;
+	  }
+	  
+	  .collapsible {border-radius: 30px;}
+
+	  .content {
+		padding: 0 18px 25px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		background-color: #a3c0f2ff;
+	  }
 	
